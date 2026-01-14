@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Beatly- Video Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body class="videp-player-page">
+    
+    <header class="top-header">
+        <div class="logo-container">
+            <img src="logo.png" alt="beatly" style="width:50px; height:30px;">
+        </div>
+        <a href="index.html" class="home-circle"><i class="fa fa-home"></i></a>
+        <div class="search-container">
+            <input type="text" placeholder="What do you want to search?...">
+        </div>
+        
+        <div id="header-clock" class="header-datetime"></div>
+    </header>
+
+    <div class="layout-container">
+        <aside class="sidebar">
+            <nav class="nav-links">
+                <a href="#trending" class="nav-btn" data-key="trending">Trending songs</a>
+                <a href="artist.html" class="nav-btn" data-key="artist">Popular artist</a>
+                <a href="#best-25" class="nav-btn" data-key="best25">Best of 2025</a>
+                <a href="album.html" class="nav-btn" data-key="album">Popular album</a>
+                <a href="#shortmv" class="nav-btn" data-key="shortmv">Short MV</a>
+            </nav>
+
+            <div class="info-links">
+                <a href="about.html" target="_blank"><p data-key="about">About us</p></a>
+                <a href="contact.html" target="_blank"><p data-key="contact">Contact us</p></a>
+                
+                <div class="language-container">
+                    <button class="language-btn" id="langBtn">
+                        <i class="fa fa-language"></i><span data-key="langText">Language</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <div class="lang-option" onclick="changeLanguage('en')">English</div>
+                        <div class="lang-option" onclick="changeLanguage('ms')">Malay</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <div class="hero-box">
+                <video controls autoplay>
+                    <source src="alamak.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="video-info">
+                    <h1>Alamak</h1>
+                    <p>Rizky Febian & Adrian Khalif</p>
+                    <hr style="border: 0.5px solid rgba(255,255,255,0.1); margin: 20px 0;">
+                    <a href="index.html" style="color: #049cac; font-weight:bold;"><i class="fa fa-arrow-left"></i> Back to Home</a>
+                </div>
+            </div>
+        </main>
+    </div>
+    </body>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Beatly</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
