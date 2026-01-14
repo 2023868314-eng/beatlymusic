@@ -1,0 +1,338 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Beatly</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body>
+    
+    <header class="top-header">
+        <div class="logo-container">
+            <img src="logo.png" alt="beatly" style="width:50px; height:30px;">
+        </div>
+        <a href="index.html" class="home-circle"><i class="fa fa-home"></i></a>
+        <div class="search-container">
+            <input type="text" placeholder="What do you want to search?...">
+        </div>
+        
+        <div class="header-icons">
+        <div class="icon-circle"><img src="malaysia.jpg" alt="Malaysia"></div>
+        <div class="icon-circle"><img src="indon.jpg" alt="Indonesia"></div>
+        <div class="icon-circle"><img src="western.jpg" alt="Western"></div>
+        <div class="icon-circle"><img src="korea.jpg" alt="Korea"></div>
+        <div class="icon-circle"><img src="thai.jpg" alt="Thailand"></div>
+        <div class="icon-circle"><img src="cina.jpg" alt="China"></div>
+    </div>
+
+        <div id="header-clock" class="header-datetime"></div>
+    </header>
+
+    <div class="layout-container">
+        <aside class="sidebar">
+            <nav class="nav-links">
+                <a href="#trending" class="nav-btn" data-key="trending">Trending songs</a>
+                <a href="#artist" class="nav-btn" data-key="artist">Popular artist</a>
+                <a href="#best-25" class="nav-btn" data-key="best25">Best of 2025</a>
+                <a href="#album" class="nav-btn" data-key="album">Popular album</a>
+                <a href="#shortmv" class="nav-btn" data-key="shortmv">Short MV</a>
+            </nav>
+
+            <div class="info-links">
+                <a href="about.html" target="_blank"><p data-key="about">About us</p></a>
+                <a href="contact.html" target="_blank"><p data-key="contact">Contact us</p></a>
+                
+                <div class="language-container">
+                    <button class="language-btn" id="langBtn">
+                        <i class="fa fa-language"></i><span data-key="langText">Language</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <div class="lang-option" onclick="changeLanguage('en')">English</div>
+                        <div class="lang-option" onclick="changeLanguage('ms')">Malay</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="hero-box">
+                <div class="hero-section">
+                <p><img src="logo.png" alt="beatly" class="hero-logo"></p>
+                </div>
+            </div>
+            
+            <!-- TRENDING SONGS -->
+            <div id="trending" class="trending-box">
+                <div class="trending-header">
+                    <h3 data-key="trending">Trending Songs</h3>
+                        <div class="slider-controls">
+                        <button id="prevBtn" class="slide-arrow"><i class="fa fa-chevron-left"></i></button>
+                        <button id="nextBtn" class="slide-arrow"><i class="fa fa-chevron-right"></i></button>
+                        </div>
+                </div>
+    
+            <div class="trending-wrapper">
+                <div class="trending-slider" id="musicSlider">
+                    <div class="slide-page">
+                        <div class="song-card clickable-song" data-src="idtigaf.mp3" data-title="Sedia aku sebelum hujan" data-artist="Idgitaf" data-img="idtigaf.jpeg">
+                        <img src="idtigaf.jpeg" alt="cover">
+                        <div class="song-details"><p class="s-title">Sedia aku sebelum hujan</p><p class="s-artist">Idgitaf</p></div>
+                        <i class="fa fa-play-circle play-icon"></i>
+                        </div>
+
+                        <div class="song-card clickable-song" data-src="hindia.mp3" data-title="Everyhting you are" data-artist="Hindia" data-img="hindia.jpeg">
+                        <img src="hindia.jpeg" alt="cover">
+                        <div class="song-details"><p class="s-title">Everything you are</p><p class="s-artist">Hindia</p></div>
+                        <i class="fa fa-play-circle play-icon"></i>
+                        </div>
+
+                        <div class="song-card clickable-song" data-src="mangu.mp3" data-title="Mangu" data-artist="Fourtwnty" data-img="mangu.jpeg">
+                        <img src="mangu.jpeg" alt="cover">
+                        <div class="song-details"><p class="s-title">Mangu</p><p class="s-artist">Fourtwnty</p></div>
+                        <i class="fa fa-play-circle play-icon"></i>
+                        </div>
+
+                        <div class="song-card clickable-song" data-src="nadhif.mp3" data-title="Kota ini tak sama tanpamu" data-artist="Nadhif Basalamah" data-img="nadhif.jpeg">
+                        <img src="nadhif.jpeg" alt="cover">
+                        <div class="song-details"><p class="s-title">Kota ini tak sama tanpamu</p><p class="s-artist">Nadhif Basalamah</p></div>
+                        <i class="fa fa-play-circle play-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="slide-page">
+                        <div class="song-card clickable-song" data-src="tabole.mp3" data-title="Tabole Bale" data-artist="Silet open up" data-img="tabole.jpeg">
+                        <img src="tabole.jpeg" alt="cover">
+                        <div class="song-details"><p class="s-title">Tabole Bale</p><p class="s-artist">Silent open up</p></div>
+                        <i class="fa fa-play-circle play-icon"></i>
+                        </div>
+
+                        <div class="song-card clickable-song" data-src="chanel.mp3" data-title="Chanel" data-artist="Tyla" data-img="chanel.jpg">
+                        <img src="chanel.jpg" alt="cover">
+                        <div class="song-details"><p class="s-title">Chanel</p><p class="s-artist">Tyla</p></div>
+                        <i class="fa fa-play-circle play-icon"></i>
+                        </div>
+
+                        <div class="song-card clickable-song" data-src="lush.mp3" data-title="Lush life" data-artist="Zara Larsson" data-img="lush.jpeg">
+                        <img src="lush.jpeg" alt="cover">
+                        <div class="song-details"><p class="s-title">Lush life</p><p class="s-artist">Zara Larsson</p></div>
+                        <i class="fa fa-play-circle play-icon"></i>
+                        </div>
+
+                        <div class="song-card clickable-song" data-src="she.mp3" data-title="I thought i saw your face today" data-artist="She & Him" data-img="she.jpeg">
+                        <img src="she.jpeg" alt="cover">
+                        <div class="song-details"><p class="s-title">I thought i saw your face today</p><p class="s-artist">She & Him</p></div>
+                        <i class="fa fa-play-circle play-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <!-- POPULAR ARTIST -->
+<div id="artist" class="trending-box">
+    <div class="trending-header">
+        <h3 data-key="artist">Popular Artist</h3>
+        <div class="slider-controls">
+            <button id="prevArtist" class="slide-arrow"><i class="fa fa-chevron-left"></i></button>
+            <button id="nextArtist" class="slide-arrow"><i class="fa fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel-list" id="carouselList">
+            <div class="artist-card-3d active" data-index="0">
+                <div class="card-content">
+                    <img src="taylors.jpg" alt="Taylor">
+                    <div class="info">
+                        <h2>Taylor Swift</h2>
+                        <p>American global superstar and record-breaking singer-songwriter known for her narrative songwriting that often chronicles her personal life.</p>
+                        <h4>Top Songs:</h4>
+                        <ul>
+                            <li>Cruel summer</li>
+                            <li>Anti-hero</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artist-card-3d" data-index="1">
+                <div class="card-content">
+                    <img src="morgan.jpg" alt="Morgan">
+                    <div class="info">
+                        <h2>Morgan Wallen</h2>
+                        <p>He has become one of the biggest names in modern music, known for blending traditional country sounds with trap and rock influences.</p>
+                        <h4>Top Songs:</h4>
+                        <ul>
+                            <li>Last night</li>
+                            <li>I had some help</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="artist-card-3d" data-index="2">
+                <div class="card-content">
+                    <img src="olivia.jpg" alt="Olivia">
+                    <div class="info">
+                        <h2>Olivia Dean</h2>
+                        <p>A British soul and jazz-pop singer-songwriter from London, celebrated for her warm, silken vocals and down-to-earth lyrics.</p>
+                        <h4>Top Songs:</h4>
+                        <ul>
+                            <li>Man I need</li>
+                            <li>Dive</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+           
+        <!-- BEST OF 25 -->
+        <div id="best-25" class="trending-box">
+            <div class="trending-header">
+                <h3 data-key="best25">Best of 2025</h3>
+            </div>
+    
+            <div class="best-grid">
+                <div class="song-card-v clickable-song" data-src="bergema.mp3" data-title="Bergema sampai selamanya" data-artist="Nadhif Basalamah" data-img="nadhif.jpeg">
+                    <img src="nadhif.jpeg" alt="cover">
+                    <div class="song-info-v">
+                    <p class="s-title">Bergema sampai selamanya</p>
+                    <p class="s-artist">Nadhif Basalamah</p>
+                    </div>
+                </div>
+
+                <div class="song-card-v clickable-song" data-src="taylor.mp3" data-title="The fate of ophelia" data-artist="Taylor swift" data-img="taylor.jpeg">
+                    <img src="taylor.jpeg" alt="cover">
+                    <div class="song-info-v">
+                    <p class="s-title">The fate of ophelia</p>
+                    <p class="s-artist">Taylor swift</p>
+                    </div>
+                </div>
+
+                <div class="song-card-v clickable-song" data-src="die.mp3" data-title="Die with a smile" data-artist="Lady gaga, Bruno Mars" data-img="die.jpg">
+                    <img src="die.jpg" alt="cover">
+                    <div class="song-info-v">
+                    <p class="s-title">Die with a smile</p>
+                    <p class="s-artist">Lady gaga, Bruno mars</p>
+                    </div>
+                </div>
+
+                <div class="song-card-v clickable-song" data-src="rahsia.mp3" data-title="Rahsia tuhan" data-artist="Noh salleh" data-img="rahsia.jpeg">
+                    <img src="rahsia.jpeg" alt="cover">
+                    <div class="song-info-v">
+                    <p class="s-title">Rahsia tuhan</p>
+                    <p class="s-artist">Noh salleh</p>
+                    </div>
+                </div>
+
+                <div class="song-card-v clickable-song" data-src="burner.mp3" data-title="Buckburner" data-artist="Niki" data-img="burner.jpeg">
+                    <img src="burner.jpeg" alt="cover">
+                    <div class="song-info-v">
+                    <p class="s-title">Backburner</p>
+                    <p class="s-artist">Niki</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--POPULAR ALBUM -->
+<div id="album" class="trending-box">
+    <div class="trending-header">
+        <h3 data-key="album">Popular Album</h3>
+    </div>
+
+    <div class="country-selection">
+        <div class="country-circle" onclick="showCountrySongs('malaysia')">
+            <img src="malaysia.jpg" alt="Malaysia">
+            <p>Malaysia</p>
+        </div>
+        <div class="country-circle" onclick="showCountrySongs('indonesia')">
+            <img src="indon.jpg" alt="Indonesia">
+            <p>Indonesia</p>
+        </div>
+        <div class="country-circle" onclick="showCountrySongs('western')">
+            <img src="western.jpg" alt="Western">
+            <p>Western</p>
+        </div>
+    </div>
+
+    <div id="country-songs-container" class="country-songs-list" style="display: none;">
+        <h4 id="selected-country-name" style="color: #049cac; margin-bottom: 15px;"></h4>
+        <div id="songs-grid" class="best-grid">
+            </div>
+    </div>
+</div>
+
+        <!-- SHORT MV -->
+         <div id="shortmv" class="trending-box">
+            <div class="trending-header">
+            <h3 data-key="shortmv">Short MV</h3>
+            </div>
+
+            <div class="mv-grid">
+                <a href="video-player.html?lanymv.mp4" class="mv-card">
+                <div class="mv-thumbnail">
+                <img src="lanymv.jpg" alt="MV 1">
+                <div class="play-overlay"><i class="fa fa-play"></i></div>
+                </div>
+                <div class="mv-details">
+                <p class="s-title">XXL (Official MV)</p>
+                <p class="s-artist">LANY</p>
+                </div>
+                </a>
+
+                <a href="video-player1.html?alamak.mp4" class="mv-card">
+                <div class="mv-thumbnail">
+                <img src="alamak.jpg" alt="MV 2">
+                <div class="play-overlay"><i class="fa fa-play"></i></div>
+                </div>
+                <div class="mv-details">
+                <p class="s-title">Alamak (Official MV)</p>
+                <p class="s-artist">Rizky Febian & Adrian Khalif</p>
+                </div>
+        </a>
+    </div>
+</div>
+
+        <!-- MUSIC FOOTER -->
+        <div id="music-player-footer" class="player-footer">
+            <div class="player-info">
+                <img id="player-img" src="idtigaf.jpeg" alt="playing">
+                <div class="text-info">
+                    <p id="player-title">Sedia aku sebelum hujan</p>
+                    <p id="player-artist">Idgitaf</p>
+                </div>
+            </div>
+            
+            <div class="player-controls">
+                <div class="control-buttons">
+                    <button id="prevSong"><i class="fa fa-step-backward"></i></button>
+                    <button id="masterPlay"><i class="fa fa-play-circle"></i></button>
+                    <button id="nextSong"><i class="fa fa-step-forward"></i></button>
+                </div>
+                <div class="progress-area">
+                    <span id="currentTime">0:00</span>
+                    <input type="range" id="progressBar" min="0" max="100" value="0">
+                    <span id="durationTime">0:00</span>
+                </div>
+            </div>
+
+            <div class="volume-control">
+                <i class="fa fa-volume-up"></i>
+                <input type="range" id="volumeBar" min="0" max="100" value="80">
+            </div>
+        </div>
+
+            <footer class="footer">
+                <p>© 2026 Beatly</p>
+            </footer>
+        </main>
+
+        <audio id="mainAudio" src=""></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

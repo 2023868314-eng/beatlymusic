@@ -1,0 +1,73 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Beatly- COntact us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body class="contact-page-layout">
+    
+    <header class="top-header">
+        <div class="logo-container">
+            <img src="logo.png" alt="beatly" style="width:50px; height:30px;">
+        </div>
+        <a href="index.html" class="home-circle"><i class="fa fa-home"></i></a>
+        <div class="search-container">
+            <input type="text" placeholder="What do you want to search?...">
+        </div>
+        <div class="header-icons">
+        <div class="icon-circle"><img src="malaysia.jpg" alt="Malaysia"></div>
+        <div class="icon-circle"><img src="indon.jpg" alt="Indonesia"></div>
+        <div class="icon-circle"><img src="western.jpg" alt="Western"></div>
+        <div class="icon-circle"><img src="korea.jpg" alt="Korea"></div>
+        <div class="icon-circle"><img src="thai.jpg" alt="Thailand"></div>
+        <div class="icon-circle"><img src="cina.jpg" alt="China"></div>
+    </div>
+        <div id="header-clock" class="header-datetime"></div>
+    </header>
+
+    <main class="contact-full-wrapper">
+        <div class="contact-box">
+            <img src="logo.png" alt="Beatly Logo" class="contact-logo-large">
+            
+            <h2>Get in Touch</h2>
+            <p style="color: #bbb; margin-bottom: 30px;">Click any information below to copy it instantly.</p>
+
+            <div class="contact-info-list">
+                <div class="contact-item" onclick="copyToClipboard('13, 6, Jalan Astakajaya, Taman Segamat Jaya, 85000 Segamat District, Johor', 'Address')">
+                    <i class="fa fa-map-marker-alt"></i>
+                    <div>
+                        <span>Our Address</span>
+                        <p id="address-text">13, 6, Jalan Astakajaya, Taman Segamat Jaya, 85000 Segamat District, Johor</p>
+                    </div>
+                </div>
+
+                <div class="contact-item" onclick="copyToClipboard('+60 12-345 6789', 'Phone Number')">
+                    <i class="fa fa-phone-alt"></i>
+                    <div>
+                        <span>Phone Number</span>
+                        <p id="phone-text">+60 12-345 6789</p>
+                    </div>
+                </div>
+
+                <div class="contact-item" onclick="copyToClipboard('beatly@gmail.com', 'Email Address')">
+                    <i class="fa fa-envelope"></i>
+                    <div>
+                        <span>Email Support</span>
+                        <p id="email-text">beatly@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="index.html" class="back-home-link">
+                <i class="fa fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+        
+    </main>
+
+    <div id="copy-toast">Copied to clipboard!</div>
+    <script src="script.js"></script>
+</body>
+</html>

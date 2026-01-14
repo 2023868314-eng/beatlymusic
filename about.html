@@ -1,0 +1,112 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Beatly- About us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="logo.png">
+</head>
+<body class="videp-player-page">
+    
+    <header class="top-header">
+        <div class="logo-container">
+            <img src="logo.png" alt="beatly" style="width:50px; height:30px;">
+        </div>
+        <a href="index.html" class="home-circle"><i class="fa fa-home"></i></a>
+        <div class="search-container">
+            <input type="text" placeholder="What do you want to search?...">
+        </div>
+        <div class="header-icons">
+        <div class="icon-circle"><img src="malaysia.jpg" alt="Malaysia"></div>
+        <div class="icon-circle"><img src="indon.jpg" alt="Indonesia"></div>
+        <div class="icon-circle"><img src="western.jpg" alt="Western"></div>
+        <div class="icon-circle"><img src="korea.jpg" alt="Korea"></div>
+        <div class="icon-circle"><img src="thai.jpg" alt="Thailand"></div>
+        <div class="icon-circle"><img src="cina.jpg" alt="China"></div>
+    </div>
+        <div id="header-clock" class="header-datetime"></div>
+    </header>
+
+    <div class="layout-container">
+        <aside class="sidebar">
+            <nav class="nav-links">
+                <a href="#trending" class="nav-btn" data-key="trending">Trending songs</a>
+                <a href="artist.html" class="nav-btn" data-key="artist">Popular artist</a>
+                <a href="#best-25" class="nav-btn" data-key="best25">Best of 2025</a>
+                <a href="album.html" class="nav-btn" data-key="album">Popular album</a>
+                <a href="#shortmv" class="nav-btn" data-key="shortmv">Short MV</a>
+            </nav>
+
+            <div class="info-links">
+                <a href="about.html" target="_blank"><p data-key="about">About us</p></a>
+                <a href="contact.html" target="_blank"><p data-key="contact">Contact us</p></a>
+                
+                <div class="language-container">
+                    <button class="language-btn" id="langBtn">
+                        <i class="fa fa-language"></i><span data-key="langText">Language</span>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <div class="lang-option" onclick="changeLanguage('en')">English</div>
+                        <div class="lang-option" onclick="changeLanguage('ms')">Malay</div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="hero-box">
+                <h2 style="color: white; margin-bottom: 30px; text-align: left;">Meet Our Team</h2>
+                
+                <div class="team-container">
+                    <div class="team-card">
+                        <img src="rai.jpeg" alt="Manager" class="member-img">
+                        <div class="member-info">
+                            <h3>Raihanatul 'Atirah</h3>
+                            <p class="role">General Manager</p>
+                            <p class="scope">Responsible for overseeing overall operations, strategic planning, and leading the team to achieve company goals.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img src="nat.jpeg" alt="Music Manager" class="member-img">
+                        <div class="member-info">
+                            <h3>Nor'aina Natasya</h3>
+                            <p class="role">Music Content Manager</p>
+                            <p class="scope">Handles playlist curation, artist partnerships, and ensures the latest trending music is available for users.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img src="ain.jpg" alt="Web Dev Manager" class="member-img">
+                        <div class="member-info">
+                            <h3>Nurul Ain Izzati</h3>
+                            <p class="role">Web Developer Manager</p>
+                            <p class="scope">Leads the technical development team, maintains site performance, and implements new features for the platform.</p>
+                        </div>
+                    </div>
+
+                    <div class="team-card">
+                        <img src="nazurah.jpeg" alt="UI Manager" class="member-img">
+                        <div class="member-info">
+                            <h3>Asri Nazurah</h3>
+                            <p class="role">User Interface Manager</p>
+                            <p class="scope">Focuses on design aesthetics, user experience (UX) flow, and creating a visually stunning interface for Beatly.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <hr style="border: 0.5px solid rgba(255,255,255,0.1); margin: 30px 0;">
+                <a href="index.html" style="color: #049cac; font-weight: bold; text-decoration: none;">
+                    <i class="fa fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+
+            <footer class="footer">
+                <p>© 2026 Beatly</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
